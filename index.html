@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Nama</title>
+    <title>Riwayat Perbaikan Modul Elektro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Selamat Datang di TriantoAdi.com</h1>
+    <h1>Masukkan Data Perbaikan Modul Elektro</h1>
+    <form id="repair-form">
+        <label for="technician">Nama Teknisi:</label>
+        <input type="text" id="technician" name="technician" required><br>
+        <label for="module">Modul:</label>
+        <input type="text" id="module" name="module" required><br>
+        <label for="repair-date">Tanggal Perbaikan:</label>
+        <input type="date" id="repair-date" name="repair-date" required><br>
+        <label for="description">Deskripsi Perbaikan:</label>
+        <textarea id="description" name="description" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
